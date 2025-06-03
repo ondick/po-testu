@@ -1,10 +1,17 @@
 public class YoutubeVideo implements IObsah{
-    String nazev;
-    int delka;
-    String jmenoAutora;
+    private String nazev;
+    private int delka;
+    private String jmenoAutora;
+
+    public YoutubeVideo(String nazev, int delka, String jmenoAutora) {
+        this.nazev = nazev;
+        this.delka = delka;
+        this.jmenoAutora = jmenoAutora;
+    }
+
     @Override
     public int getDelka() {
-        return 0;
+        return delka;
     }
     public String toString() {
         return "Youtube video '"+nazev+"' od autora "+jmenoAutora;
